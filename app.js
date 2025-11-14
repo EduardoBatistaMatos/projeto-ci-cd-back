@@ -30,6 +30,7 @@ app.get("/", (req, res) => {
 
 
 //Adicionar novas funcionalidades
+
 app.get("/subtracao", (req, res) => {
   const { num1, num2 } = req.query;
   const result = parseFloat(num1) - parseFloat(num2);
