@@ -9,5 +9,5 @@ Demonstrar integração entre GitHub, Render e Vercel com deploy automatizado vi
 3. Front na Vercel consome automaticamente a API atualizada.
 
 ## URLs
-- Front-end: https://projeto-front.vercel.app
-- Back-end: https://projeto-back.onrender.com
+- Front-end: https://projeto-ci-cd-front-omega.vercel.app/
+- Back-end: https://projeto-ci-cd-back-5k23.onrender.com
