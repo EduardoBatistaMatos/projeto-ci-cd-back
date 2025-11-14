@@ -8,7 +8,7 @@ Demonstrar integração entre GitHub, Render e Vercel com deploy automatizado vi
 - **Vercel:** Hospedagem do front-end.
 - **Render:** Hospedagem do back-end.
 - **Node.js:** Backend da aplicação.
-- **HTML, CSS, JavaScript:** Front-end da aplicação.
+
 
 ## Fluxo de Deploy
 1. Push de nova tag (exemplo: `v1.0.0`) aciona o GitHub Actions.
