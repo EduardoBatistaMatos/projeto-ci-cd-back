@@ -11,6 +11,7 @@ app.use(cors({
 
 app.get("/", (req, res) => {
   res.json({
+    Teste : "Se isso aparecer é porque atualizou!",
     message: "API está rodando! Para utilizá-la, siga o passo a passo abaixo:",
     passo_a_passo: [
       "1. Use os endpoints /soma, /subtracao, /multiplicacao ou /divisao.",
