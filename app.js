@@ -11,7 +11,6 @@ app.use(cors({
 
 app.get("/", (req, res) => {
   res.json({
-    Testando: "Se isso aparecer é porque deu certo o deploy automatico",
     message: "API está rodando! Para utilizá-la, siga o passo a passo abaixo:",
     passo_a_passo: [
       "1. Use os endpoints /soma, /subtracao, /multiplicacao ou /divisao.",
