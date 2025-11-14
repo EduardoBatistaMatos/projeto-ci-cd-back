@@ -1,4 +1,4 @@
-# Projeto CI/CD - Exemplo
+# Projeto CI/CD - Backend
 
 ## Objetivo
 Demonstrar integração entre GitHub, Render e Vercel com deploy automatizado via GitHub Actions.
