@@ -5,7 +5,7 @@ const port = process.env.PORT || 3000;
 
 const app = express();
 app.use(cors({
-  origin: "https://frontend-ten-dusky-31.vercel.app"
+  origin: "https://projeto-ci-cd-front-omega.vercel.app/"
 }));
 
 
@@ -31,10 +31,31 @@ app.get("/", (req, res) => {
 
 //Adicionar novas funcionalidades
 
-
 app.get("/multiplicacao", (req, res) => {
   const { num1, num2 } = req.query;
   const result = parseFloat(num1) * parseFloat(num2);
+  res.json({ result });
+});
+
+app.get("/soma", (req, res) => {
+  const { num1, num2 } = req.query;
+  const result = parseFloat(num1) + parseFloat(num2);
+  res.json({ result });
+});
+
+app.get("/subtracao", (req, res) => {
+  const { num1, num2 } = req.query;
+  const result = parseFloat(num1) - parseFloat(num2);
+  res.json({ result });
+});
+
+app.get("/divisao", (req, res) => {
+  const { num1, num2 } = req.query;
+
+  if (parseFloat(num2) === 0) {
+    return res.status(400).json({ result: "Divisão por zero" });
+  }
+  const result = parseFloat(num1) / parseFloat(num2);
   res.json({ result });
 });
 
